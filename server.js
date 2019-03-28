@@ -8,7 +8,7 @@ const server = express();
 server.use(express.json());
 server.use(helmet());
 
-server.use('/api/dishes', dishRouter);
+server.use('/api/dish', dishRouter);
 server.use('/api/recipes', recipeRouter);
 
 server.get('/', (req, res) => {
